@@ -68,7 +68,6 @@ if __name__ == '__main__':
     elif "energy" not in options.properties:
         energy = "0"
 
-    if "coords" in options.properties:
-        f_out = (options.file).split('.')[0] + ".xyz"
-        get_coords(data, f_out, options.geomopt, energy)
-        print(" [+] wrote xyz file: {}".format(f_out))
+    f_out = (options.file).split('.')[0] + ".xyz"
+    get_coords(data, f_out, options.geomopt, energy)
+    print(" [+] wrote xyz file: {}".format(f_out))
