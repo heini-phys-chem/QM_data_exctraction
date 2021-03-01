@@ -10,7 +10,7 @@ def get_arguments():
     parser = optparse.OptionParser()
     parser.add_option("-f", "--file", dest="file", help="log file from QM calculation")
     parser.add_option("-m", "--method", type="string", dest="method", help="QM method used in the calculation (HF, DFT, MP2, CC)")
-    parser.add_option("-p", "--properties", dest="properties", type="string", action="callback", callback=prop_callback, help="Properties to be extracted separated by commas (coords,energy)")
+    parser.add_option("-p", "--properties", dest="properties", type="string", action="callback", callback=prop_callback, help="Properties to be extracted separated by commas (energy, TODO...)")
     parser.add_option("-g", "--geomopt", dest="geomopt", action="store_true", help="Sets bool to True if used")
 
     (options, arguments) = parser.parse_args()

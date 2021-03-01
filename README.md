@@ -1,5 +1,5 @@
 # QM_data_exctraction
-Using cclib to extract data from QM log files
+Wrapper for the cclib python library
 </br>
 ### Usage:
 ```
